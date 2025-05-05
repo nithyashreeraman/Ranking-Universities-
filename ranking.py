@@ -634,7 +634,7 @@ with tabs[2]:
             )
 
 with tabs[3]:
-    st.markdown("<h2 style='text-align: center; color: #4B4B4B;'>📘 USN Ranking</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #4B4B4B;'>USN Ranking</h2>", unsafe_allow_html=True)
 
     usn_selected_uni = st.selectbox(
         "", options=["Global Selected University"] + extra_usn_unis,
