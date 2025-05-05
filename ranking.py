@@ -108,7 +108,7 @@ def get_metric_value(df, university, column):
         return "N/A"
 
 # --- Setup Tabs ---
-tabs = st.tabs(["📊 Overview", "🟣 TIMES", "🟨 QS", "📘 USN", "🔵 Washington"])
+tabs = st.tabs(["📊 Overview", "🟣 TIMES", "🟨 QS", "📘 USN", "🔵 Washington Monthly"])
 
 # Shared Chart Function for All Tabs
 def plot_chart_sorted(df, metric_col, title_label, description, color_map, comparison_unis, height=400):
