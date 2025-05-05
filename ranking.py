@@ -253,7 +253,7 @@ with tabs[0]:
         df[["low", "high", "mid"]] = df[metric_col].apply(lambda r: pd.Series(parse_rank_range(str(r))))
         return df[df["mid"].notna()]
 
-    metrics_tabs = st.tabs(["TIMES Rank", "QS Rank", "USN Rank", "Washington Rank"])
+    metrics_tabs = st.tabs(["TIMES Rank", "QS Rank", "USN Rank", "Washington Monthly Rank"])
 
     with metrics_tabs[0]:
         times_ranks = build_rank_range_df(times_filtered, "Times_Rank")
@@ -752,7 +752,7 @@ with tabs[3]:
 
 with tabs[4]:
     st.markdown("""
-        <h2 style='text-align: center; color: #4B4B4B;'>Washington Ranking</h2>
+        <h2 style='text-align: center; color: #4B4B4B;'>Washington Monthly Ranking</h2>
     """, unsafe_allow_html=True)
 
     washington_selected_uni = st.selectbox(
